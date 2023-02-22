@@ -11,16 +11,18 @@ export default function NavBar() {
 
     return (
         <div>
-            <nav className="w-full bg-greenYellow fixed top-0 left-0 right-0 z-10">
+            <nav className="w-full bg-lightOrange fixed top-0 left-0 right-0 z-10">
                 <div className="justify-between px-4 mx-auto lg:max-w-7x1 md:items-center md:flex md:px-8">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                                <Link className="text-2xl text-yellowGreen font-bold hover:bg-lightBlue  border-lightBlue  md:hover:text-lightBlue md:hover:bg-transparent" href="#home" onClick={() => setNavbar(false)}>
+                                <Link className="text-2xl text-cream font-bold hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent" 
+                                    href="#home" 
+                                    onClick={() => setNavbar(false)}>
                                     Home
                                 </Link>
                             <div className="md:hidden">
                                 <button 
-                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus-border"
+                                    className="p-2 text-brown rounded-md outline-none focus:border-brown focus-border"
                                     onClick={() => setNavbar(!navbar)}
                                 >
                                     {navbar ? (
@@ -45,17 +47,17 @@ export default function NavBar() {
                               }`}
                         >
                             <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                                <li className="pb-6 text-xl text-yellowGreen py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-lightBlue  border-lightBlue  md:hover:text-lightBlue md:hover:bg-transparent">
+                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
                                 <Link href="#home" onClick={() => setNavbar(!navbar)}>
                                     Home
                                 </Link>
                                 </li>
-                                <li className="pb-6 text-xl text-yellowGreen py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-lightBlue  border-lightBlue  md:hover:text-lightBlue md:hover:bg-transparent">
+                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
                                 <Link href="#projects" onClick={() => setNavbar(!navbar)}>
                                     Projects
                                 </Link>
                                 </li>
-                                <li className="pb-6 text-xl text-yellowGreen py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-lightBlue  border-lightBlue  md:hover:text-lightBlue md:hover:bg-transparent">
+                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
                                 <Link href="#about" onClick={() => setNavbar(!navbar)}>
                                     About
                                 </Link>

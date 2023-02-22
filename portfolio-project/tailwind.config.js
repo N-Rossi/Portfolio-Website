@@ -6,11 +6,12 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      darkBlue: '#184e77',
-      blue: '#1a759f',
-      lightBlue: '#34a0a4',
-      lightGreen: '#76c893',
-      yellowGreen: '#d9ed92'
+      brown: '#8B4411',
+      redTan: '#ae6e4e',
+      lightBrown: '#a57a5a',
+      mustardBrown: '#C7AD7F',
+      lightOrange: '#CC9767',
+      cream: '#f8f1dc'
     },
   },
   plugins: [],
