@@ -3,71 +3,43 @@
 import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
+
 import { useState } from "react";
 
 export default function NavBar() {
 
-    const [navbar, setNavbar] = useState(false)
-
     return (
-        <div>
-            <nav className="w-full bg-lightOrange fixed top-0 left-0 right-0 z-10">
-                <div className="justify-between px-4 mx-auto lg:max-w-7x1 md:items-center md:flex md:px-8">
-                    <div>
-                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                                <Link className="text-2xl text-cream font-bold hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent" 
-                                    href="#home" 
-                                    onClick={() => setNavbar(false)}>
-                                    Home
-                                </Link>
-                            <div className="md:hidden">
-                                <button 
-                                    className="p-2 text-brown rounded-md outline-none focus:border-brown focus-border"
-                                    onClick={() => setNavbar(!navbar)}
-                                >
-                                    {navbar ? (
-                                        <Image src="/close.svg" width={30} height={30} alt="logo" />
-                                    ) : (
-                                        <Image
-                                            src="/hamburger-menu.svg"
-                                            width={30}
-                                            height={30}
-                                            alt="logo"
-                                            className="focus:border-none active:border-none"
-                                        />
-                                    )}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                                navbar ? 'p-12 md:p-0 block' : 'hidden'
-                              }`}
-                        >
-                            <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
-                                <Link href="#home" onClick={() => setNavbar(!navbar)}>
-                                    Home
-                                </Link>
-                                </li>
-                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
-                                <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                                    Projects
-                                </Link>
-                                </li>
-                                <li className="pb-6 text-xl text-cream py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-mustardBrown  border-mustardBrown  md:hover:text-mustardBrown md:hover:bg-transparent">
-                                <Link href="#about" onClick={() => setNavbar(!navbar)}>
-                                    About
-                                </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </nav>
-        </div>
+        <main className="text-xs sm:text-xl">
+            <section>
+                <nav className="py-5 px-4 mb-12 flex justify-between text-black-900 ">
+
+                    <a href="#home" className=" px-10 hidden sm:block">Nicolas Rossi</a>
+
+                    <ul className="flex items-center">
+                        <li className="">
+                            <a href="#about" className=" px-4">About</a>
+                        </li>
+                        <li className="">
+                            <a href="#projects" className=" px-4">Projects</a>
+                        </li>
+                        <li className=" ">
+                            <a href="#contact" className=" px-4">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <ul className="hidden sm:flex flex-row gap-2 items-center">
+                        <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
+                        <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
+                        <li className="px-4 py-2 min-h-fit rounded-lg bg-black-900 text-white">
+                            <a href="#" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </section>
+        </main>
+
     )
 }
