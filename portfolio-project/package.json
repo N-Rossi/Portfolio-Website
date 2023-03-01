@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@next/font": "^13.1.6",
     "@radix-ui/react-tooltip": "^1.0.4",
     "@types/node": "18.14.0",

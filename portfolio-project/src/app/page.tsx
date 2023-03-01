@@ -1,3 +1,6 @@
+"use client"
+
+import React, { useRef, useState } from 'react';
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
@@ -10,8 +13,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-
-
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -73,9 +75,33 @@ export default function Home() {
   },
   ]
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+  
+    if (form.current) {
+      emailjs.sendForm("service_hocnid2", 'template_8lm0e45', form.current, 'a8rTC_T5gOyeDESnY')
+        .then((result: EmailJSResponseStatus) => {
+            console.log(result.text);
+            console.log("Message Sent!")
+            alert("Message Sent!")
+            setName("")
+            setEmail("")
+            setMsg("")
+        }, (error: EmailJSResponseStatus) => {
+            console.log(error.text);
+        });
+    }
+  };
+
   return (
       <main className="">
-        <section id="home" className='flex align-top flex-col h-100v w-11/12 m-auto'>
+        <section id="home" className='flex align-top flex-col h-100v w-11/12 m-auto min-h-100v'>
           <div className='flex justify-start align-top content-start flex-col'>
             <h1 className=' text-6xl sm:text-7xl font-semibold '>Hello World!</h1>
             <br/>
@@ -92,8 +118,10 @@ export default function Home() {
 
         <section id="about" className='flex align-top flex-col min-h-100v w-11/12 m-auto'>
 
-          <div className="flex align-top flex-col h-30v w-11/12 m-auto">
+          <div className="flex align-top flex-col w-11/12 m-auto min-h-70v">
               <div className="flex justify-start align-top content-start flex-col">
+              <h2 className='text-5xl p-10'>About Me</h2>
+              <br/>
                   <p className="text-black-900 text-xl sm:text-5xl">
                       I am a Software Developer who loves to use my skills
                       to build anything! I have received a Bachelors Degree in Computer Science
@@ -108,7 +136,7 @@ export default function Home() {
           <br/>
           <h3 className='text-3xl sm:text-4xl'>My Web Stack:</h3>
           <br/>
-          <div className="grid gap-4 sm:grid-cols-3 grid-cols-1">
+          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-2 grid-cols-1">
                   {skills.map((items, key) => (
                     <div className=" relative w-50vh p-4 shadow-md lg:max-w-lg m-auto" key={key}>
                       <div className=' absolute left-2 top-2'>
@@ -136,10 +164,10 @@ export default function Home() {
             {projects.map((items, key) => (
                     <a className="grid min-h-1/4  justify-center relative hover:scale-110 duration-500 hover:shadow-lg" key={key} href="http://localhost:3000/" >
                       <img src={items.img} className=" w-screen"/>
-                      <div className='opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-start items-end bottom-2 left-2 text-3xl text-white font-semibold'>
+                      <div className='opacity-100 sm:opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-start items-end bottom-2 left-2 text-3xl text-white font-semibold'>
                         <div className='flex flex-col justify-start'>
-                          <h3 className='flex justify-start'>{items.title}</h3>
-                          <p>{items.content}</p>
+                          <h3 className='flex justify-start text-md sm:text-5xl'>{items.title}</h3>
+                          <p className='text-sm sm:text-4xl'>{items.content}</p>
                         </div>
                       </div>
                     </a>
@@ -148,7 +176,34 @@ export default function Home() {
         </section>
 
         <section id="contact" className='text-center py-10 p-10 flex align-top flex-col h-100v'>
-          <h2 className=" text-5xl py-2 font-medium md:text-6xl text-brown-900">Contact Me!</h2>
+          <h2 className='text-5xl p-10'>Contact Me</h2>
+          <br/>
+          <div className=" flex justify-center p-6">
+            <form ref={form} onSubmit={sendEmail} className=" w-full sm:w-1/2">
+              <div className="flex flex-wrap sm:flex-nowrap -mx-3 mb-6">
+                <div className="w-full md:w-3/4 px-3 mb-6 md:mb-0">
+                  <label className='flex pl-2 uppercase tracking-wide text-gray-700 text-md font-bold mb-2'>Name</label>
+                  <input type="text" name="user_name" onChange={event => setName(event.target.value)} value={name} className='appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white' />
+                </div>
+                <div className="w-full px-3">
+                  <label className='flex pl-2 uppercase tracking-wide text-gray-700 text-md font-bold mb-2' >Email</label>
+                  <input type="email" name="user_email" onChange={event => setEmail(event.target.value)} value={email} className='appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white' />
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label className='flex pl-2 uppercase tracking-wide text-gray-700 text-md font-bold mb-2' >Message</label>
+                  <textarea name="message" onChange={event => setMsg(event.target.value)} value={msg} className='appearance-none block w-full h-20v bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white' />
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <button type="submit" value="Send" className='px-4 py-2 min-h-fit w-20 rounded-lg bg-black-900 text-white'>Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
         </section>
         
 
