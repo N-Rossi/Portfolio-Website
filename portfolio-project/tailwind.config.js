@@ -5,7 +5,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('../..//public/blurry-gradient-hero.svg')",
+        'hero': "url('/hero.svg')",
+        'about': "url('/about-bg.svg')",
+        'project': "url('/project-bg.svg')",
+        'contact': "url('/contact-bg.svg')",
+        'parks': "url('/parks-bg.svg')",
+        'park-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/blurred-park-bg.jpg')",
       },
     },
     keyframes: {
@@ -37,24 +42,26 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      brown: '#8B4411',
-      brown: {
-        900: '#8B4411',
-        700: '#ae6e4e',
-        500: '#a57a5a',
-        300: '#CC9767',
-        100: '#C7AD7F',
+      white: {
+        900: '#FFFFFF',
+        200: '#EDEDED'
       },
-      cream: '#f8f1dc',
-      white: '#FFFFFF',
       black: '#000000',
       black: {
-        900: '#03001C',
-        300: '#C8C8C8',
+        900: '#0B0C10',
+        300: '#1F2833',
+        100: '#C5C6C7'
       },
-      purple: '#301E67',
+      blue: {
+        700: '#242582',
+        500: '#2F2FA2'
+      },
+      purple: {
+        300: '#553D67',
+        200: '#99738E',
+      },
+      pink: '#F64C72',
       lightBlue: '#5B8FB9',
-      lightGreen: '#B6EADA'
     },
     fontFamily: {
       
