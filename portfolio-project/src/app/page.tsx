@@ -101,8 +101,8 @@ export default function Home() {
               {projects.map((items, key) => (
                       <Link className="grid min-h-1/4  justify-center relative hover:scale-110 duration-500 hover:shadow-lg" key={key} href={{pathname: `/projects/${items.id}`}} >
                         <img src={items.img1} className=" w-screen rounded-xl"/>
-                        <div className='opacity-100 sm:opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-start items-end bottom-2 left-2 text-3xl text-white-900 font-semibold'>
-                          <div className='flex flex-col'>
+                        <div className='opacity-100 sm:opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-start items-end text-3xl text-white-900 font-semibold'>
+                          <div className='flex flex-col bg-gradient-to-t from-black-300 to-transparent w-full'>
                             <h3 className='text-start text-md sm:text-4xl px-2'>{items.title}</h3>
                             <p className='text-start text-sm sm:text-2xl px-2 '>{items.content}</p>
                           </div>
