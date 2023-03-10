@@ -1,5 +1,4 @@
 import { SiReact, SiTailwindcss, SiPostgresql, SiElectron, SiTypescript, SiJavascript, SiCss3, SiNextdotjs } from 'react-icons/si'
-import { TbBrandNextjs, TbBrandReactNative, TbBrandCss3 } from 'react-icons/Tb'
 
 export const skills = [
     {
