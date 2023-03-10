@@ -20,7 +20,7 @@ export default function Home() {
   const form = useRef<HTMLFormElement>(null);
 
   if(process.env.NEXT_PUBLIC_SERVICE_KEY === undefined) {
-    serviceKey = "err"
+    serviceKey =  "err"
   }
   else {
     serviceKey = process.env.NEXT_PUBLIC_SERVICE_KEY
