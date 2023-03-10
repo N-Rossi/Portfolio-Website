@@ -13,7 +13,7 @@ export const projects = [
       id: "portfolio",
       subtitle: "This portfolio was created using NextJS and Tailwindcss from scratch.",
       content: "The portfolio that you are viewing right now was made using NextJS and tailwindcss. I made this from scratch using no templates.",
-      cardImg: '/portfolio/portfolio-home.png',
+      cardImg: './portfolio/portfolio-home.png',
       img1: "/portfolio/portfolio-home.png",
       img2: "/portfolio/portfolio-about.png",
       img3: "/portfolio/portfolio-project.png",
