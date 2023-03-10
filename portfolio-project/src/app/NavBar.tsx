@@ -17,7 +17,7 @@ export default function NavBar() {
 
                     <div className=" hidden sm:flex flex-row px-6">
                     <BsCodeSquare size={'2rem'} color='#F64C72' />
-                    <a href="#home" className=" pl-4 text-2xl block text-white-900 font-bold">Nicolas Rossi</a>
+                    <a href="/" className=" pl-4 text-2xl block text-white-900 font-bold">Nicolas Rossi</a>
                     </div>
 
                     <ul className="flex items-center m-auto">
@@ -36,7 +36,7 @@ export default function NavBar() {
                         <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
                         <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
                         <li className="px-4 py-2 min-h-fit rounded-lg bg-pink text-white-900 shadow-xl">
-                            <a href="#" target="_blank">Resume</a>
+                            <a href='/Nicolas-Rossi-Resume-2023.pdf' target={'_blank'} >Resume</a>
                         </li>
                     </ul>
                     
