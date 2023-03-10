@@ -10,30 +10,44 @@ import NavBar from './NavBar';
 
 const inter = Inter({ subsets: ['latin'] })
 
-
 export default function Home() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  let serviceKey: string
 
   const form = useRef<HTMLFormElement>(null);
+
+  if(process.env.NEXT_PUBLIC_SERVICE_KEY === undefined) {
+    serviceKey = "err"
+  }
+  else {
+    serviceKey = process.env.NEXT_PUBLIC_SERVICE_KEY
+  }
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   
     if (form.current) {
-      emailjs.sendForm("service_hocnid2", 'template_8lm0e45', form.current, 'a8rTC_T5gOyeDESnY')
-        .then((result: EmailJSResponseStatus) => {
-            console.log(result.text);
-            console.log("Message Sent!")
-            alert("Message Sent!")
-            setName("")
-            setEmail("")
-            setMsg("")
-        }, (error: EmailJSResponseStatus) => {
-            console.log(error.text);
-        });
+
+      try {
+        emailjs.sendForm(serviceKey, 'template_8lm0e45', form.current, 'a8rTC_T5gOyeDESnY')
+          .then((result: EmailJSResponseStatus) => {
+              console.log(result.text);
+              console.log("Message Sent!")
+              alert("Message Sent!")
+              setName("")
+              setEmail("")
+              setMsg("")
+          }, (error: EmailJSResponseStatus) => {
+              console.log(error.text);
+          });
+      }
+      catch(error) {
+        console.error(error);
+        alert("There was an error on our end! You can send your email manually to nick413rossi@gmail.com. I am sorry for the inconvenience ")
+      }
     }
   };
 
@@ -99,12 +113,12 @@ export default function Home() {
             <br />
             <div className=' container grid grid-cols-1 m-auto gap-12 w-full sm:w-1/2'>
               {projects.map((items, key) => (
-                      <Link className="grid min-h-1/4  justify-center relative hover:scale-110 duration-500 hover:shadow-lg" key={key} href={{pathname: `/projects/${items.id}`}} >
-                        <img src={items.img1} className=" w-screen rounded-xl"/>
+                      <Link className="grid min-h-1/4 object-contain justify-center relative hover:scale-110 duration-500 hover:shadow-lg" key={key} href={{pathname: `/projects/${items.id}`}} >
+                        <img src={items.cardImg} className=" w-screen rounded-xl"/>
                         <div className='opacity-100 sm:opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-start items-end text-3xl text-white-900 font-semibold'>
                           <div className='flex flex-col bg-gradient-to-t from-black-300 to-transparent w-full'>
                             <h3 className='text-start text-md sm:text-4xl px-2'>{items.title}</h3>
-                            <p className='text-start text-sm sm:text-2xl px-2 '>{items.content}</p>
+                            <p className='text-start text-sm sm:text-2xl px-2 '>{items.subtitle}</p>
                           </div>
                         </div>
                       </Link>

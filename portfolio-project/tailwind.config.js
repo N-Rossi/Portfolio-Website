@@ -13,6 +13,8 @@ module.exports = {
         'park-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/blurred-park-bg.jpg')",
         'runSignupBG-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/trackImg.jpg')",
         'runCard': "url('/runCard.svg')",
+        'port-img': "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/portfolio/port-bg.png')",
+        'port-card': "linear-gradient(90deg, rgba(105,255,226,0.7035189075630253) 0%, rgba(0,97,78,1) 100%)",
       },
     },
     keyframes: {
