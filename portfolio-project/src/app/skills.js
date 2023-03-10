@@ -1,4 +1,4 @@
-import { SiReact, SiTailwindcss, SiPostgresql, SiElectron, SiTypescript, SiJavascript } from 'react-icons/si'
+import { SiReact, SiTailwindcss, SiPostgresql, SiElectron, SiTypescript, SiJavascript, SiCss3, SiNextdotjs } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandReactNative, TbBrandCss3 } from 'react-icons/Tb'
 
 export const skills = [
@@ -9,7 +9,7 @@ export const skills = [
     },
     {
       title: "React Native",
-      img: <TbBrandReactNative size="2rem" />,
+      img: <SiReact size="2rem" />,
       content: "I have used REACT NATIVE to build a mobile application that uses one codebase to support both IOS and Android"
     },
     {
@@ -19,7 +19,7 @@ export const skills = [
     },
     {
     title: "NextJS",
-    img: <TbBrandNextjs size="2rem"/>,
+    img: <SiNextdotjs size="2rem"/>,
     content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
     },
     {
@@ -34,7 +34,7 @@ export const skills = [
     },
     {
       title: "CSS",
-      img: <TbBrandCss3 size="2rem"/>,
+      img: <SiCss3 size="2rem"/>,
       content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
     },
     {
