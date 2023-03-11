@@ -5,8 +5,8 @@ export const projects = [
       subtitle: "A small project I created using NextJS that utilizes the NPS API to help users find places to visit while on a trip.",
       content: "A small project I created using NextJS that utilizes the NPS API to help users find places to visit while on a trip.",
       cardImg: `/nationalParks-homePage.png`,
-      img1: `/nationalParks-homePage.png`,
-      img2: "/nationalParks-resultsPage.png", 
+      img1: `/nationalParks/nationalParks-homePage.png`,
+      img2: "/nationalParks/nationalParks-resultsPage.png", 
     }, 
     {
       title: "Portfolio Project",
