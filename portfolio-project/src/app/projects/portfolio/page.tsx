@@ -54,8 +54,8 @@ export default function Salty() {
                         <p className='py-4 text-blue-700 text-lg flex-wrap'> {project.content} </p>
                         
                         <ul className="flex flex-row py-4 gap-6 justify-start">
-                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold "><a href="https://nationalparks-next.vercel.app/" target="_blank"><BsLink size="1.5rem" color='#2F2FA2' /></a></li>
-                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold"><a href="https://github.com/N-Rossi/nationalparks-next" target="_blank"><BsGithub size="1.5rem" color='#2F2FA2' /></a></li>
+                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold "><a href="https://nicolas-rossi.com/" target="_blank"><BsLink size="1.5rem" color='#2F2FA2' /></a></li>
+                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold"><a href="https://github.com/N-Rossi/Portfolio-Website" target="_blank"><BsGithub size="1.5rem" color='#2F2FA2' /></a></li>
                         </ul>
                     </div>
                     <div className=' flex flex-col m-auto tile row-start-2 md:col-start-2 md:col-end-4'>
