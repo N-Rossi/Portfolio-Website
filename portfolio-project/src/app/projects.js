@@ -4,9 +4,9 @@ export const projects = [
       id: "nationalParks",
       subtitle: "A small project I created using NextJS that utilizes the NPS API to help users find places to visit while on a trip.",
       content: "A small project I created using NextJS that utilizes the NPS API to help users find places to visit while on a trip.",
-      cardImg: `/nationalParks-homePage.PNG`,
-      img1: `/nationalParks-homePage.PNG`,
-      img2: "/nationalParks-resultsPage.PNG",
+      cardImg: `/nationalParks-homePage.png`,
+      img1: `/nationalParks-homePage.png`,
+      img2: "/nationalParks-resultsPage.png",
     }, 
     {
       title: "Portfolio Project",
@@ -26,7 +26,7 @@ export const projects = [
       cardImg: '/runSignup/runSignup-finishMode.png',
       img1: "/runSignup/runSignup-finishModeCropped.png",
       img2: "/runSignup/runSignup-chuteModeCropped.png",
-      img3: "/runSignup/runSignup-resultsModeCropped.PNG",
+      img3: "/runSignup/runSignup-resultsModeCropped.png",
     }, 
 
 ]
