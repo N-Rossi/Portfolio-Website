@@ -9,12 +9,12 @@ import Link from 'next/link'
 export default function Salty() {
     
     const project = {
-        title: projects[1].title,
-        content: projects[1].content,
+        title: projects[0].title,
+        content: projects[0].content,
         images: [
-            projects[1].img1,
-            projects[1].img2,
-            projects[1].img3,
+            projects[0].img1,
+            projects[0].img2,
+            projects[0].img3,
         ],
     }
     const [currentPage, setCurrentPage] = useState(0);
@@ -40,7 +40,7 @@ export default function Salty() {
                             <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
                             <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
                             <li className="px-2 py-2 min-h-fit rounded-lg bg-pink text-white-900 ">
-                                <a href="#" target="_blank">Resume</a>
+                                <a href='/Nicolas-Rossi-Resume-2023.pdf' target="_blank">Resume</a>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +54,7 @@ export default function Salty() {
                         <p className='py-4 text-blue-700 text-lg flex-wrap'> {project.content} </p>
                         
                         <ul className="flex flex-row py-4 gap-6 justify-start">
-                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold "><a href="https://nicolas-rossi.com/" target="_blank"><BsLink size="1.5rem" color='#2F2FA2' /></a></li>
+                            <li className="px-2 py-2 min-h-fit rounded-lg font-bold "><a href="https://nicolas-rossi.codes/" target="_blank"><BsLink size="1.5rem" color='#2F2FA2' /></a></li>
                             <li className="px-2 py-2 min-h-fit rounded-lg font-bold"><a href="https://github.com/N-Rossi/Portfolio-Website" target="_blank"><BsGithub size="1.5rem" color='#2F2FA2' /></a></li>
                         </ul>
                     </div>

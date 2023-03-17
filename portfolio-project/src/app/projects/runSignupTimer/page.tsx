@@ -9,12 +9,12 @@ import Link from 'next/link'
 export default function RunSignupTimer() {
     
     const project = {
-        title: projects[2].title,
-        content: projects[2].content,
+        title: projects[1].title,
+        content: projects[1].content,
         images: [
-            projects[2].img1,
-            projects[2].img2,
-            projects[2].img3,
+            projects[1].img1,
+            projects[1].img2,
+            projects[1].img3,
         ],
     }
     const [currentPage, setCurrentPage] = useState(0);
@@ -40,7 +40,7 @@ export default function RunSignupTimer() {
                             <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
                             <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
                             <li className="px-2 py-2 min-h-fit rounded-lg bg-purple-300 text-white-900 ">
-                                <a href="#" target="_blank">Resume</a>
+                            <a href='/Nicolas-Rossi-Resume-2023.pdf' target="_blank">Resume</a>
                             </li>
                         </ul>
                     </div>
