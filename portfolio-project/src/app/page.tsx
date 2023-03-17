@@ -62,7 +62,7 @@ export default function Home() {
               <p className=' text-lg text-white-900 py-2'>Hello, my name is</p>
               <h1 className=' text-6xl sm:text-7xl font-semibold text-white-900'>Nicolas Rossi</h1>
               <br/>
-              <h2 className=' text-5xl sm:text-6xl text-white-200'>I am a software developer who is passionate about building applications that are highly functional and user friendly!</h2>
+              <h2 className=' text-3xl sm:text-6xl text-white-200'>I am a software developer who is passionate about building applications that are highly functional and user friendly!</h2>
               <br />
               <ul className=" hidden sm:flex flex-row justify-start p-4 gap-4">
                   <li className="px-4 py-2 min-h-fit rounded-lg bg-pink text-white-900 shadow-xl"><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank">LinkedIn</a></li>
