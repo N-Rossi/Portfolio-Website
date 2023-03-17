@@ -9,12 +9,12 @@ import Link from 'next/link'
 export default function Salty() {
     
     const project = {
-        title: projects[1].title,
-        content: projects[1].content,
+        title: projects[0].title,
+        content: projects[0].content,
         images: [
-            projects[1].img1,
-            projects[1].img2,
-            projects[1].img3,
+            projects[0].img1,
+            projects[0].img2,
+            projects[0].img3,
         ],
     }
     const [currentPage, setCurrentPage] = useState(0);

@@ -9,12 +9,12 @@ import Link from 'next/link'
 export default function RunSignupTimer() {
     
     const project = {
-        title: projects[2].title,
-        content: projects[2].content,
+        title: projects[1].title,
+        content: projects[1].content,
         images: [
-            projects[2].img1,
-            projects[2].img2,
-            projects[2].img3,
+            projects[1].img1,
+            projects[1].img2,
+            projects[1].img3,
         ],
     }
     const [currentPage, setCurrentPage] = useState(0);

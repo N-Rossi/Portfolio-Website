@@ -81,9 +81,9 @@ export default function Home() {
               <h2 className='text-5xl py-10 text-pink font-bold'>About Me</h2>
                   <p className=" text-purple-300 text-xl sm:text-5xl">
                       I am a Software Developer who loves to use my skills
-                      to build things! I have received a Bachelors Degree in Computer Science
+                      to build things! I have received a Bachelors of Science in Computer Science
                       with a minor in Mathematics and a concentration in Cyber Security. I work professionally as a Software Developer and
-                      am always trying to learn something new each and every day.
+                      am always pushing myself to learn something new each and every day.
                   </p>
               </div>
           </div>
