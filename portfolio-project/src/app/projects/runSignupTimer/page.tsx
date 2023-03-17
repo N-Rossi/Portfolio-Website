@@ -40,7 +40,7 @@ export default function RunSignupTimer() {
                             <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
                             <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
                             <li className="px-2 py-2 min-h-fit rounded-lg bg-purple-300 text-white-900 ">
-                                <a href="#" target="_blank">Resume</a>
+                            <a href='/Nicolas-Rossi-Resume-2023.pdf' target="_blank">Resume</a>
                             </li>
                         </ul>
                     </div>

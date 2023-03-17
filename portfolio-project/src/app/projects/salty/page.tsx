@@ -32,8 +32,8 @@ export default function Salty() {
     };
   
     return (
-        <div className=' bg-park-img bg-cover bg-center text-white-900'>
-            <section className='h-10v w-screen pt-6'>
+        <div className=' bg-park-img bg-cover bg-center text-white-900 sm:overflow-hidden'>
+            <section className='h-[5vh] w-screen pt-6'>
                 <nav className='flex flex-row justify-between px-10'>
                     <Link className=' font-bold' href={'/#projects'}><IoMdArrowRoundBack size={'2rem'} color={'black-900'} /></Link>
                     <Link className=' font-bold text-2xl hidden md:block' href={'/'}>Nicolas Rossi</Link>
@@ -42,13 +42,13 @@ export default function Salty() {
                             <li className="px-2 "><a href="https://www.linkedin.com/in/nicolas-d-rossi/" target="_blank"><BsLinkedin size={'2.75vh'} /></a></li>
                             <li className="px-2"><a href="https://github.com/N-Rossi" target="_blank"><BsGithub size={'2.75vh'}/></a></li>
                             <li className="px-2 py-2 min-h-fit rounded-lg bg-purple-300 text-white-900 ">
-                                <a href="#" target="_blank">Resume</a>
+                                <a href='/Nicolas-Rossi-Resume-2023.pdf' target="_blank">Resume</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </section>
-            <section className=' min-h-90v sm:h-100v w-[100vw] p-6 flex justify-center items-center'>
+            <section className=' min-h-90v sm:h-[95vh] w-[100vw] p-6 flex justify-center items-center'>
                 <div className='   bg-parks bg-cover bg-no-repeat bg-center rounded-2xl p-6 grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-3 gap-4 h-[90%] md:h-[70%] w-11/12 md:w-[70%] shadow-xl'>
                     <div className=' justify-center md:justify-start flex flex-col tile'>
                         <h2 className=' text-xl md:text-5xl text-blue-700  font-bold '> {project.title} </h2>
