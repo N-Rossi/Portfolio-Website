@@ -30,7 +30,7 @@ export default function RunSignupTimer() {
     };
   
     return (
-        <div className=' bg-runSignupBG-img bg-cover bg-center text-white-900 min-h-100v md:h-100v md:overflow-hidden'>
+        <div className=' bg-port-img bg-cover bg-center text-white-900 min-h-100v md:h-100v md:overflow-hidden'>
             <section className='h-10v w-screen pt-6 '>
                 <nav className='flex flex-row md:justify-between px-10'>
                     <Link className=' font-bold' href={'/#projects'}><IoMdArrowRoundBack size={'2rem'} color={'black-900'} /></Link>
