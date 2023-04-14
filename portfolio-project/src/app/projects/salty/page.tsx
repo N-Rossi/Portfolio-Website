@@ -32,7 +32,7 @@ export default function Salty() {
     };
   
     return (
-        <div className=' bg-park-img bg-cover bg-center text-white-900 sm:overflow-hidden'>
+        <div className=' bg-port-img bg-cover bg-center text-white-900 sm:overflow-hidden'>
             <section className='h-[5vh] w-screen pt-6'>
                 <nav className='flex flex-row justify-between px-10'>
                     <Link className=' font-bold' href={'/#projects'}><IoMdArrowRoundBack size={'2rem'} color={'black-900'} /></Link>
@@ -49,7 +49,7 @@ export default function Salty() {
                 </nav>
             </section>
             <section className=' min-h-90v sm:h-[95vh] w-[100vw] p-6 flex justify-center items-center'>
-                <div className='   bg-parks bg-cover bg-no-repeat bg-center rounded-2xl p-6 grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-3 gap-4 h-[90%] md:h-[70%] w-11/12 md:w-[70%] shadow-xl'>
+                <div className='   bg-runCard bg-cover bg-no-repeat bg-center rounded-2xl p-6 grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-3 gap-4 h-[90%] md:h-[70%] w-11/12 md:w-[70%] shadow-xl'>
                     <div className=' justify-center md:justify-start flex flex-col tile'>
                         <h2 className=' text-xl md:text-5xl text-blue-700  font-bold '> {project.title} </h2>
                         <br />
