@@ -61,11 +61,11 @@ export default function About() {
               sports-betting simulator with live APIs, arbitrage finders, and an MMR ladder.
               Before that I co-developed an XRP sniping bot that generated{' '}
               <span className="text-accent-lime font-semibold">$250,000+</span> over six
-              months at the peak of the market.
+              months at the peak of the market. I write fully tested, well documented code, 
+              and I have experience leveraging AI to optimize development workflows and solve complex problems.
             </p>
             <p>
-              Rowan CS grad, Magna Cum Laude, minor in Math, NCAA track athlete. I write
-              fully tested and well documented code.
+              Rowan CS grad, Magna Cum Laude, minor in Math, NCAA track athlete.
             </p>
           </motion.div>
 
