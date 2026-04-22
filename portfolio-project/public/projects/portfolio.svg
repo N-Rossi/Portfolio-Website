@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0920"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="640" cy="140" r="150" fill="#8b5cf6" opacity="0.3" filter="url(#blur)"/>
+  <circle cx="160" cy="380" r="150" fill="#22d3ee" opacity="0.22" filter="url(#blur)"/>
+  <g transform="translate(80,80)" font-family="JetBrains Mono, monospace" fill="#a4a9bf" font-size="13">
+    <text x="0" y="0"><tspan fill="#d946ef">&lt;</tspan>main<tspan fill="#d946ef">&gt;</tspan></text>
+    <text x="20" y="22"><tspan fill="#22d3ee">const</tspan> <tspan fill="#e8ecf7">site</tspan> = () =&gt; (</text>
+    <text x="40" y="44"><tspan fill="#8b5cf6">&lt;Hero</tspan> <tspan fill="#a3e635">animated</tspan>=<tspan fill="#22d3ee">{true}</tspan> <tspan fill="#8b5cf6">/&gt;</tspan></text>
+    <text x="40" y="66"><tspan fill="#8b5cf6">&lt;Projects</tspan> <tspan fill="#a3e635">moving</tspan> <tspan fill="#8b5cf6">/&gt;</tspan></text>
+    <text x="40" y="88"><tspan fill="#8b5cf6">&lt;Experience</tspan> <tspan fill="#a3e635">timeline</tspan> <tspan fill="#8b5cf6">/&gt;</tspan></text>
+    <text x="20" y="110">)</text>
+    <text x="0" y="132"><tspan fill="#d946ef">&lt;/</tspan>main<tspan fill="#d946ef">&gt;</tspan></text>
+  </g>
+  <g transform="translate(80,380)" font-family="Space Grotesk, Inter, sans-serif" fill="#e8ecf7">
+    <text x="0" y="0" font-size="42" font-weight="700">Portfolio v2</text>
+    <text x="0" y="30" font-size="16" fill="#a4a9bf">Next.js · Tailwind · Framer Motion</text>
+  </g>
+</svg>
