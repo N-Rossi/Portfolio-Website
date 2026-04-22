@@ -88,7 +88,7 @@ export default function NavBar() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="text-text-secondary hover:text-accent-cyan transition-colors"
+            className="inline-flex items-center justify-center h-10 w-10 rounded-full text-text-secondary hover:text-accent-cyan hover:bg-white/5 transition-colors"
           >
             <BsLinkedin size={20} />
           </a>
@@ -97,7 +97,7 @@ export default function NavBar() {
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="text-text-secondary hover:text-accent-cyan transition-colors"
+            className="inline-flex items-center justify-center h-10 w-10 rounded-full text-text-secondary hover:text-accent-cyan hover:bg-white/5 transition-colors"
           >
             <BsGithub size={20} />
           </a>
