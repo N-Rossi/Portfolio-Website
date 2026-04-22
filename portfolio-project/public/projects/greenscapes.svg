@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1a14"/>
+      <stop offset="1" stop-color="#12321f"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="650" cy="120" r="140" fill="#a3e635" opacity="0.25" filter="url(#blur)"/>
+  <g transform="translate(0,380)" fill="#0f3a22">
+    <path d="M0,80 Q200,40 400,60 T800,50 L800,120 L0,120 Z"/>
+  </g>
+  <g transform="translate(0,410)" fill="#175b36">
+    <path d="M0,50 Q200,20 400,30 T800,25 L800,90 L0,90 Z"/>
+  </g>
+  <g transform="translate(450,120)" opacity="0.85">
+    <path d="M60,140 L60,60 Q60,20 100,20 Q140,20 140,60 L140,140 Z" fill="#3a6b43"/>
+    <circle cx="100" cy="50" r="50" fill="#4caf50"/>
+    <circle cx="70" cy="30" r="30" fill="#66bb6a"/>
+    <circle cx="130" cy="30" r="30" fill="#388e3c"/>
+  </g>
+  <g transform="translate(80,380)" font-family="Space Grotesk, Inter, sans-serif" fill="#e8ecf7">
+    <text x="0" y="0" font-size="42" font-weight="700">Greenscapes</text>
+    <text x="0" y="30" font-size="16" fill="#a4a9bf">Static landing site for a local business</text>
+  </g>
+</svg>

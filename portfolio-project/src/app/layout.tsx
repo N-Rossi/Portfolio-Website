@@ -1,16 +1,23 @@
 import './globals.css'
-import NavBar from './NavBar'
 import HashScroll from './HashScroll'
-import { Nanum_Gothic, Oxygen } from '@next/font/google'
+import { Inter, Space_Grotesk, JetBrains_Mono } from '@next/font/google'
 
-const gothic = Nanum_Gothic({
+const sans = Inter({
   subsets: ['latin'],
-  weight: ['400', '700', '800'],
+  variable: '--font-sans',
+  weight: ['300', '400', '500', '600', '700'],
 })
 
-const oxygen = Oxygen({
+const display = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700'],
+})
+
+const mono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400', '500', '700'],
 })
 
 export default function RootLayout({
@@ -19,16 +26,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={oxygen.className}>
-      <head>
-
-      </head>
-      <body className=''>
-        <HashScroll>
-          {children}
-        </HashScroll>
-        
-        </body>
+    <html
+      lang="en"
+      className={`${sans.variable} ${display.variable} ${mono.variable}`}
+    >
+      <head />
+      <body className="font-sans bg-ink-950 text-text-primary">
+        <HashScroll>{children}</HashScroll>
+      </body>
     </html>
   )
 }
