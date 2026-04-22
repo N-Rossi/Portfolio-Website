@@ -40,7 +40,7 @@ export default function CustomCursor() {
       <motion.div
         aria-hidden
         className="pointer-events-none fixed top-0 left-0 z-[100] mix-blend-difference"
-        style={{ x: springX, y: springY }}
+        style={{ x, y }}
       >
         <motion.div
           animate={{ scale: hovering ? 1.8 : 1 }}
@@ -51,7 +51,7 @@ export default function CustomCursor() {
       <motion.div
         aria-hidden
         className="pointer-events-none fixed top-0 left-0 z-[99]"
-        style={{ x, y }}
+        style={{ x: springX, y: springY }}
       >
         <motion.div
           animate={{ scale: hovering ? 1.4 : 1, opacity: hovering ? 0.25 : 0.15 }}

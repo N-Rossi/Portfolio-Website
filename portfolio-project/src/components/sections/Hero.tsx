@@ -207,7 +207,7 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
-              className="hover:text-white transition-colors"
+              className="inline-flex items-center justify-center h-11 w-11 rounded-full hover:text-white hover:bg-white/5 transition-colors"
             >
               <BsGithub size={22} />
             </a>
@@ -216,7 +216,7 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              className="hover:text-white transition-colors"
+              className="inline-flex items-center justify-center h-11 w-11 rounded-full hover:text-white hover:bg-white/5 transition-colors"
             >
               <BsLinkedin size={22} />
             </a>

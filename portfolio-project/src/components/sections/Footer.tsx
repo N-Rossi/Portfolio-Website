@@ -16,10 +16,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center gap-5 text-text-secondary">
+        <div className="flex items-center gap-2 text-text-secondary">
           <a
             href="mailto:nick413rossi@gmail.com"
-            className="hover:text-white transition-colors"
+            className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:text-white hover:bg-white/5 transition-colors"
             aria-label="Email"
           >
             <HiOutlineMail size={20} />
@@ -28,7 +28,7 @@ export default function Footer() {
             href="https://github.com/N-Rossi"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white transition-colors"
+            className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:text-white hover:bg-white/5 transition-colors"
             aria-label="GitHub"
           >
             <BsGithub size={20} />
@@ -37,7 +37,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/nicolas-d-rossi/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-white transition-colors"
+            className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:text-white hover:bg-white/5 transition-colors"
             aria-label="LinkedIn"
           >
             <BsLinkedin size={20} />
