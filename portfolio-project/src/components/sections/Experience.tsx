@@ -20,8 +20,8 @@ export default function Experience() {
             The path <span className="text-gradient">so far</span>
           </h2>
           <p className="mt-5 text-lg text-text-secondary max-w-2xl">
-            Enterprise federal work by day, independent products by night. Below is where
-            I&rsquo;ve shipped.
+            Enterprise federal work by day, independent products by night. Below is my
+            professional journey.
           </p>
         </motion.div>
 

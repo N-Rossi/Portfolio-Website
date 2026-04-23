@@ -34,7 +34,7 @@ export default function About() {
         >
           <span className="section-eyebrow">01 · About</span>
           <h2 className="section-title mt-4">
-            Engineer who likes the <span className="text-gradient">hard problems</span>
+            Engineer who likes solving the <span className="text-gradient">hard problems</span>
           </h2>
         </motion.div>
 

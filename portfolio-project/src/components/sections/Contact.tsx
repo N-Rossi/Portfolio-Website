@@ -92,7 +92,7 @@ export default function Contact() {
                     LinkedIn
                   </div>
                   <div className="font-medium text-white group-hover:text-accent-cyan transition-colors">
-                    /in/nicolas-d-rossi
+                    nicolas-d-rossi
                   </div>
                 </div>
               </a>
